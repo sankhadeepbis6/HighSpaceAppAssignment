@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HighSpaceApp</string>
+    
+    <string name="image_description">description</string>
+    <string name="search_hint">Try restaurant, coffee</string>
+    <string name="explore_text">Explore events now</string>
+    <string name="ongoing_text">Ongoing events</string>
+    <string name="Upcoming_text">Upcoming events</string>
+
+    <string name="text_default">Default</string>
+</resources>

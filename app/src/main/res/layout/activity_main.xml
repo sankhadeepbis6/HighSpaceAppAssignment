@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp">
+
+        <EditText
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="8dp"
+            android:padding="5dp"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:background="@drawable/round_background"
+            android:autofillHints="@string/search_hint"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/explore_text"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:textStyle="bold"
+                android:gravity="center|start"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/explore_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/ongoing_text"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:textStyle="bold"
+                android:gravity="center|start"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ongoing_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/Upcoming_text"
+                android:textSize="18sp"
+                android:textColor="#222222"
+                android:textStyle="bold"
+                android:gravity="center|start"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/upcoming_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

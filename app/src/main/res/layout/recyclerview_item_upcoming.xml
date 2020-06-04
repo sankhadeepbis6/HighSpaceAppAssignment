@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_width="160dp"
+    android:layout_height="200dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#555555">
+
+        <ImageView
+            android:id="@+id/recyclerview_upcoming_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/image_description"/>
+
+        <TextView
+            android:id="@+id/recyclerview_upcoming_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:text="@string/text_default"
+            android:textColor="#000000"
+            android:paddingHorizontal="5dp"
+            android:background="@drawable/round_background_white"/>
+
+        <TextView
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000000"
+            android:shadowRadius="1"
+            android:id="@+id/recyclerview_upcoming_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/recyclerview_upcoming_text"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/text_default"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#000000"
+            android:shadowRadius="1"
+            android:id="@+id/recyclerview_upcoming_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/text_default"
+            android:layout_marginHorizontal="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
